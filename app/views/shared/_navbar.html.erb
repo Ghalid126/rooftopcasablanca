@@ -1,10 +1,12 @@
-<div class="mobileHide navbar navbar-expand-sm navbar-light navbar-lewagon">
+<div class="mobileHide navbar navbar-expand-sm navbar-light navbar-lewagon" style="height: 8rem;">
   <div class="container-fluid" style="justify-content: space-around !important;">
-    <%= link_to 'Le menu', menu_path, style:"font-size: 1.5rem;color: #1C5B73; text-decoration:none;" %>
+    <a href="tel:+212674035044" style="font-size: 1.5rem;color: #1C5B73; text-decoration:none;">Réservations</a>
+    <%= link_to 'Menu', menu_path, style:"font-size: 1.5rem;color: #1C5B73; text-decoration:none;" %>
     <%= link_to root_path do %>
-    <%= image_tag "logonavbar.svg" %>
+    <%= image_tag "logohorizontal.svg" %>
     <% end %>
     <%= link_to 'Contact', contact_path, style:"font-size: 1.5rem;color: #1C5B73; text-decoration:none;" %>
+    <%= link_to 'Gallerie', gallerie_path, style:"font-size: 1.5rem;color: #1C5B73; text-decoration:none;" %>
   </div>
 </div>
 <div class="mobileShow">

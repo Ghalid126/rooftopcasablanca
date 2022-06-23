@@ -1,0 +1,14 @@
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  transform: translateY(-1px);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}

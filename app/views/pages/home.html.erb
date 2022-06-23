@@ -1,2 +1,18 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div id="SLIDE_BGMH" class="mobileHide">
+  <div class="hoverbtn" style="margin-bottom:72px;">
+    <a href="tel:+212674035044" class="btn btn-light" style="font-size:1.5rem; margin-right: 12px; width: 12rem; border-radius: 50px; color: #1C5B73; font-weight: 200;" >Réservez</a>
+    <%= link_to t(".menu", default: "Menu"), menu_path, class: "btn", style:"font-size:1.5rem; margin-left: 12px; border: 1px solid #FFF; border-radius: 50px; width: 12rem; color: #FFF; font-weight: 200;" %>
+    <%# <%= link_to t(".contact", default: "Réservations"), contact_path, class: "btn btn-white" %>
+  </div>
+</div>
+<div id="SLIDE_BG" class="mobileShow">
+  <div class="hoverbtn" style="margin-bottom:72px;">
+    <a href="tel:+212674035044" class="btn btn-light" style="font-size:1rem; margin-right: 12px; width: 8rem; border-radius: 50px; color: #1C5B73; font-weight: 200;" >Réservez</a>
+    <a class= "btn" style="font-size:1rem; margin-left: 12px; border: 1px solid #FFF; border-radius: 50px; width: 8rem; color: #FFF; font-weight: 200;" href="/assets/menu-4a10aaac86de684cbf22c6acf9bdc71422d39adec4a2578b45fa5033bc94eadb.pdf" style="color: #1C5B73; text-decoration:none;" download>Menu </a>
+    <%# <%= link_to t(".menu", default: "Menu"), menu_path, class: "btn", style:"font-size:1rem; margin-left: 12px; border: 1px solid #FFF; border-radius: 50px; width: 8rem; color: #FFF; font-weight: 200;" %>
+    <%# <%= link_to t(".contact", default: "Réservations"), contact_path, class: "btn btn-white" %>
+  </div>
+</div>
+<div>
+    <%= image_tag "banner360.svg", style:"width:100%" %>
+</div>

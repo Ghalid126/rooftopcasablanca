@@ -1,1 +1,118 @@
 // Specific CSS for your home-page
+#SLIDE_BGMH {
+  background-image: url('image1d.png');
+  background-size: 100% 100%;
+  height:850px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: slideBgmh 8s linear infinite 0s;
+  animation-timing-function: ease-in-out;
+  @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {display: none !important;}
+}
+@font-face {
+  font-family: BAHNSCHRIFT;
+  src: url(../fonts/BAHNSCHRIFT.TTF);
+}
+body {
+  font-family: BAHNSCHRIFT, sans-serif;
+}
+p {
+  font-family: BAHNSCHRIFT, sans-serif;
+}
+a {
+  font-family: BAHNSCHRIFT, sans-serif;
+}
+img {
+  height: 100%;
+}
+
+@keyframes slideBgmh {
+  0% {
+    background-image: url('image1d.png');
+  }
+  25% {
+    background-image: url('image2d.png');
+  }
+  50% {
+    background-image: url('image3d.png');
+  }
+  75% {
+    background-image: url('image4d.png');
+  }
+  100% {
+    background-image: url('image5d.png');
+  }
+}
+
+#SLIDE_BG {
+  background-image: url('image1.png');
+  background-size: 100% 100%;
+  height: 24rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: slideBg 8s linear infinite 0s;
+  animation-timing-function: ease-in-out;
+  @media only screen and (min-device-width : 800px){display: none !important;}
+}
+
+@keyframes slideBg {
+  0% {
+    background-image: url('image1.png');
+  }
+
+  25% {
+    background-image: url('image2.png');
+  }
+
+  50% {
+    background-image: url('image3.png');
+  }
+
+  75% {
+    background-image: url('image4.png');
+  }
+
+  100% {
+    background-image: url('image5.png');
+  }
+}
+// .btn-light:hover {
+//   background-color: #DAA520;
+//   border-color: #DAA520;
+//   color:#fff !important;
+// }
+// .lol:hover {
+//   border-color: #DAA520;
+//   color: #DAA520;
+// }
+
+// .btn-light:active {
+//   background-color: #DAA520;
+//   border-color: #DAA520;
+//   color: #fff;
+// }
+
+// .lol:active {
+//   border-color: #DAA520;
+//   color: #DAA520;
+// }
+.hoverbtn a:hover {
+  background-color: #DAA520;
+  border-color: #DAA520;
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+.hoverbtn a:active {
+  background-color: #DAA520;
+  border-color: #DAA520;
+  color: #fff;
+  transform: translateY(1px);
+}

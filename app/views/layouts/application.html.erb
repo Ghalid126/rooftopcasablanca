@@ -3,13 +3,37 @@
   <head>
     <title>Rooftopcasablanca</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+
+
+    <style type="text/css">
+      .mobileShow {display: none;}
+      .mobileShow-part {display: none;}
+  /* Smartphone Portrait and Landscape */
+      @media only screen
+      and (min-device-width : 320px)
+      and (max-device-width : 800px)
+      {
+      .mobileShow {display: inline;}
+      .mobileShow-part {display: block;}
+     /* .flex-column  {display: none;}*/
+  }
+</style>
+<style type="text/css">
+  /*.mobileHide { display: inline; }*/
+
+  /* Smartphone Portrait and Landscape */
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 800px){
+     .mobileHide { display: none;}
+  }
+</style>
   </head>
 
   <body>

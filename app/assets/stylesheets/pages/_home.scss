@@ -9,7 +9,7 @@
   justify-content: center;
   background-repeat: no-repeat;
   backface-visibility: hidden;
-  animation: slideBgmh 8s linear infinite 0s;
+  animation: slideBgmh 12s linear infinite 0s;
   animation-timing-function: ease-in-out;
   @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {display: none !important;}
 }
@@ -44,7 +44,7 @@ img {
     background-image: url('image4d.png');
   }
   100% {
-    background-image: url('image5d.png');
+    background-image: url('image1d.png');
   }
 }
 
